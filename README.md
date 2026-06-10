@@ -1,4 +1,4 @@
-# sha-chain-cf5dd9
+# sha-chain-7b9a00
 
 A Rust sha-chain utility.
 

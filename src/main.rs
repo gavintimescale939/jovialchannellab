@@ -1,5 +1,5 @@
 use std::env;
-const INFO: &str = "sha-chain-cf5dd9";
+const INFO: &str = "sha-chain-7b9a00";
 fn main() {
     println!("[{}] System Information:", INFO);
     println!("  OS: {}", env::consts::OS);
